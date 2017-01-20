@@ -1,0 +1,12 @@
+uo
+*.user
+bin
+obj
+packages
+*log.txt
+*.suo
+./.vs/*
+.vs/
+*.user
+*.lock.json
+log.txt
