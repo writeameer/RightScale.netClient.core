@@ -1,0 +1,1 @@
+nuget pack RightScale.netClient.coreclr.nuspec -Symbols -Exclude "*.pdb"

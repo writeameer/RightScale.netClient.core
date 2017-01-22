@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>RightScale.netClient.coreclr</id>
+        <version>0.1-prerelease</version>
+        <title>RightScale API client for .NET core</title>
+        <authors>Ameer Deen</authors>
+        <owners>Ameer Deen</owners>
+        <licenseUrl>https://github.com/writeameer/RightScale.netClient.core/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/writeameer/RightScale.netClient.core</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>RightScale API client for .NET core. A very rough fork of github.com/rs-services/RightScaleNetAPI</description>
+        <releaseNotes>Got basic .NET core support working</releaseNotes>
+        <copyright>Copyright 2017</copyright>
+        <tags>RightScale .NET Core</tags>
+        <dependencies>
+            <group targetFramework=".NETStandard1.6">
+                <dependency id="CoreCompat.System.Security" version="4.2.3-r4" />
+                <dependency id="Microsoft.Extensions.Configuration" version="1.0.0" />
+                <dependency id="Microsoft.Extensions.Configuration.FileExtensions" version="1.0.0" />
+                <dependency id="Microsoft.Extensions.Configuration.Json" version="1.0.0" />
+                <dependency id="System.Collections.NonGeneric" version="4.0.1" />
+                <dependency id="System.Collections.Specialized" version="4.0.1" />
+                <dependency id="System.Diagnostics.StackTrace" version="4.0.1" />
+                <dependency id="System.Runtime.Serialization.Formatters" version="4.0.0-rc3-24212-01" />
+                <dependency id="System.Xml.XmlSerializer" version="4.0.11" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="bin\release\**" target="lib" />
+    </files>
+</package>
