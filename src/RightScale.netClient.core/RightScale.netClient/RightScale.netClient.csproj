@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E59B78D0-4499-4D86-B538-6D1E92FBEA12}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RightScale.netClient</RootNamespace>
+    <AssemblyName>RightScale.netClient</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Serialization" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account.cs" />
+    <Compile Include="AccountGroup.cs" />
+    <Compile Include="RunnableBindings.cs" />
+    <Compile Include="Core\API10Client.cs" />
+    <Compile Include="Core\APIClient.cs" />
+    <Compile Include="Core\ITaggableResource.cs" />
+    <Compile Include="Core\RightScaleAPI10ObjectBase.cs" />
+    <Compile Include="Core\TaggableResourceBase.cs" />
+    <Compile Include="Core\TraceDebugCategory.cs" />
+    <Compile Include="Credential.cs" />
+    <Compile Include="Objects\CommitMessage.cs" />
+    <Compile Include="Objects\Description.cs" />
+    <Compile Include="Objects\ItemAge.cs" />
+    <Compile Include="Objects\DataCenterPolicy.cs" />
+    <Compile Include="MonitoringMetricData.cs" />
+    <Compile Include="Objects\Filter.cs" />
+    <Compile Include="Objects\Bound.cs" />
+    <Compile Include="Objects\ElasticityParam.cs" />
+    <Compile Include="Objects\AlertSpecificParam.cs" />
+    <Compile Include="CloudAccount.cs" />
+    <Compile Include="DataCenter.cs" />
+    <Compile Include="Deployment.cs" />
+    <Compile Include="IdentityProvider.cs" />
+    <Compile Include="Image.cs" />
+    <Compile Include="Input.cs" />
+    <Compile Include="Instance.cs" />
+    <Compile Include="InstanceCustomLodgement.cs" />
+    <Compile Include="InstanceType.cs" />
+    <Compile Include="IPAddress.cs" />
+    <Compile Include="IPAddressBinding.cs" />
+    <Compile Include="MonitoringMetric.cs" />
+    <Compile Include="MultiCloudImage.cs" />
+    <Compile Include="MultiCloudImageSetting.cs" />
+    <Compile Include="Objects\Action.cs" />
+    <Compile Include="AlertSpec.cs" />
+    <Compile Include="AuditEntry.cs" />
+    <Compile Include="Backup.cs" />
+    <Compile Include="ChildAccount.cs" />
+    <Compile Include="Cloud.cs" />
+    <Compile Include="Core\APIClientBase.cs" />
+    <Compile Include="Objects\Link.cs" />
+    <Compile Include="Objects\Pacing.cs" />
+    <Compile Include="Objects\QueueSize.cs" />
+    <Compile Include="Objects\Resource.cs" />
+    <Compile Include="Objects\RightScaleAPIException.cs" />
+    <Compile Include="Permission.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Publication.cs" />
+    <Compile Include="PublicationLineage.cs" />
+    <Compile Include="Objects\QueueSpecificParam.cs" />
+    <Compile Include="RecurringVolumeAttachment.cs" />
+    <Compile Include="Objects\ScheduleEntry.cs" />
+    <Compile Include="Objects\APIHrefs.cs" />
+    <Compile Include="RightScript.cs" />
+    <Compile Include="SecurityGroup.cs" />
+    <Compile Include="Objects\SerializationExtensions.cs" />
+    <Compile Include="Server.cs" />
+    <Compile Include="ServerArray.cs" />
+    <Compile Include="ServerTemplate.cs" />
+    <Compile Include="ServerTemplateMultiCloudImage.cs" />
+    <Compile Include="Session.cs" />
+    <Compile Include="SshKey.cs" />
+    <Compile Include="Subnet.cs" />
+    <Compile Include="Tag.cs" />
+    <Compile Include="Task.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Objects\Utility.cs" />
+    <Compile Include="Objects\VariablesData.cs" />
+    <Compile Include="Volume.cs" />
+    <Compile Include="VolumeAttachment.cs" />
+    <Compile Include="VolumeSnapshot.cs" />
+    <Compile Include="VolumeType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\RightScaleObjectBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SecurityGroupRule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>echo POSTBUILDSTEP for $(ProjectName) - Copy output to $(SolutionDir)RightScaleNetClient
+
+echo Delete existing files
+del $(SolutionDir)Packages\RightScaleNetClientt\*.* /s /q
+
+echo Copy build output files to Packages\RSNetClient
+xcopy /y $(ProjectDir)$(OutDir)*.* $(SolutionDir)Packages\RightScaleNetClient\
+
+
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "CoreCompat.System.Security": "4.2.3-r4",
+    "Microsoft.Extensions.Configuration": "1.0.0",
+    "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0",
+    "NETStandard.Library": "1.6.1",
+    "NuSpec.ReferenceGenerator": "2.0.0-beta-bld14",
+    "System.Collections.NonGeneric": "4.0.1",
+    "System.Collections.Specialized": "4.0.1",
+    "System.Diagnostics.StackTrace": "4.0.1",
+    "System.Runtime.Serialization.Formatters": "4.0.0-rc3-24212-01",
+    "System.Xml.XmlSerializer": "4.0.11"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}
